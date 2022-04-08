@@ -36,7 +36,7 @@ export default class CustomerList extends Component {
 
     editCustomer(c_Id){
  
-        this.props.history.push(`/update-customer/${c_Id}`);
+        this.props.history.push(`/updatecust/${c_Id}`);
       // window.open=(`/update-customer/${c_Id}`);
         //window.location.href =(`/update-customer/${c_Id}`);
         

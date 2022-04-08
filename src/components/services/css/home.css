@@ -108,6 +108,13 @@
 
   }
 
+  .cardname1{
+    
+    position: fixed;
+    background-color: rgba(38, 0, 253, 0.1);
+
+  }
+
    
   .container:hover .overlay {
     opacity: 1;
@@ -180,3 +187,5 @@
  background-position: center;
 
 }
+
+

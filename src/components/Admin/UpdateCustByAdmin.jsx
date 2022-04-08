@@ -3,7 +3,7 @@ import CustomerService from '../services/CustomerService';
 import  {params } from 'react-router-dom';
 
 
-export default class UpdateCustomer extends Component {
+export default class UpdateCustByAdmin extends Component {
     constructor(props) {
         super(props)
       
@@ -54,7 +54,7 @@ export default class UpdateCustomer extends Component {
 
             CustomerService.updateCustomer(customer,this.state.id).then(res =>{
                 
-                window.location.href = "/cards";
+                window.location.href = "/customers";
             });
       
            
@@ -89,7 +89,7 @@ export default class UpdateCustomer extends Component {
       }
       
       cancel(){
-          this.props.history.push('/cards');
+          this.props.history.push('/customers');
       }
       
         render() {
@@ -140,7 +140,7 @@ export default class UpdateCustomer extends Component {
               <div className="form-group">
                   <label>Password</label>
                   <input type="password" className="form-control" placeholder="Enter password" name='password'
-                  value={this.state.password} onChange={this.changePasswordHandler}  />
+                  value={this.state.password} onChange={this.changePasswordHandler} disabled />
               </div>
       
               <button  className="btn btn-success " onClick={this.updateCustomer} style={{marginBottom:"20px"}} >Update</button>

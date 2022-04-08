@@ -54,11 +54,11 @@ import {useHistory} from 'react-router-dom'
           <ReactBootStrap.Nav.Link  href="" style={{color:'white'}} disabled>/</ReactBootStrap.Nav.Link>
           <ReactBootStrap.Nav.Link className='click' href="signup" style={{color:'white'}} onClick={signupPage} >SIGNUP</ReactBootStrap.Nav.Link> 
 
-         { localStorage.getItem('user-info')? 
+         {/* { localStorage.getItem('user-info')?  */}
          <Nav>
           <ReactBootStrap.Nav.Link className='click' style={{color:'white'}} onClick={logout} >LOGOUT</ReactBootStrap.Nav.Link> 
           </Nav>
-            :null} 
+            {/* :null}  */}
         </ReactBootStrap.Nav>
       </ReactBootStrap.Navbar.Collapse>  
     </ReactBootStrap.Navbar>

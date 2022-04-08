@@ -37,6 +37,7 @@ deleteFeedback(f_id){
 
   render() {
     return (
+        <div className='feedbacklist'>
       <div className='container'>
           <h2>Feedback</h2>
           <a style={{marginRight:'1200px'}} href='/adminpage' className='btn btn-primary'>Back</a>
@@ -74,7 +75,7 @@ deleteFeedback(f_id){
           </div>
 
 
-
+          </div>
 
 
 

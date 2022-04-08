@@ -11,7 +11,7 @@ background-image:url(https://images.pexels.com/photos/9310623/pexels-photo-93106
  min-width: 100%;
  min-height: 100%;
  background-size: cover;
- position: relative;
+ position: -webkit-sticky;
  background-position: center;
 }
 

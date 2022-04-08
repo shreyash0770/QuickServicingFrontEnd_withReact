@@ -129,7 +129,7 @@ export default class ServiceProviderSignUp extends Component {
                                                 <label  className="form-label">Name Of Shop</label>
                                                 <div className="input-group has-validation">
                                                                 
-                                                        <input type="text" className="form-control" id="validationCustomUsername"  aria-describedby="inputGroupPrepend"
+                                                        <input type="text" className="form-control" id=""  aria-describedby="inputGroupPrepend"
                                                         placeholder="Name of Shop" value={this.state.name} onChange={this.changeNameHandler} required/>
                                                         <div className="invalid-feedback"> Please choose a username.</div>
                                                       
@@ -139,8 +139,8 @@ export default class ServiceProviderSignUp extends Component {
                                                 <label  className="form-label">Enter Email Id</label>
                                                 <div className="input-group has-validation">
                                         
-                                                <input type="email" className="form-control"  id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Email Address" 
-                                                                        value={this.state.email} onChange={this.changeEmailHandler}required/>
+                                                <input type="email" className="form-control"  id="" aria-describedby="inputGroupPrepend" placeholder="Email Address" 
+                                                                        value={this.state.email} onChange={this.changeEmailHandler} required />
                                                 
                                                 </div>
                                         </div>
@@ -148,7 +148,7 @@ export default class ServiceProviderSignUp extends Component {
                                                 <label  className="form-label">Enter Address</label>
                                                 <div  className="input-group has-validation">
                                         
-                                                <input type="text" className="form-control"  id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Full Address" 
+                                                <input type="text" className="form-control"  id="" aria-describedby="inputGroupPrepend" placeholder="Full Address" 
                                                                 value={this.state.address} onChange={this.changeAddressHandler}required/>
                                                
                                         </div>
@@ -157,7 +157,7 @@ export default class ServiceProviderSignUp extends Component {
                                                 <label  className="form-label">Enter City</label>
                                                 <div  className="input-group has-validation">
                                         
-                                                <input type="text" className="form-control"  id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Enter city " 
+                                                <input type="text" className="form-control"  id="" aria-describedby="inputGroupPrepend" placeholder="Enter city " 
                                                                 value={this.state.City} onChange={this.changeCityHandler}required/>
                                                 
                                         </div>
@@ -172,7 +172,7 @@ export default class ServiceProviderSignUp extends Component {
                                                 <label  className="form-label">Enter Phone No</label>
                                                 <div  className="input-group has-validation">
                                         
-                                                <input type="text" className="form-control"  id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Enter Phone " 
+                                                <input type="text" className="form-control"  id="" aria-describedby="inputGroupPrepend" placeholder="Enter Phone " 
                                                                 value={this.state.phone} onChange={this.changePhoneHandler}required/>
                                                 
                                         </div>
@@ -183,9 +183,10 @@ export default class ServiceProviderSignUp extends Component {
                                                 <input className="form-control" list="datalistOptions"  id="exampleDataList"placeholder="Select One of the following " 
                                                                 value={this.state.Role} onChange={this.changeRoleHandler}/>
                                                 <datalist id="datalistOptions">
-                                                <option value="Garage Shop"/>
-                                                <option value="Puncture Shop"/>
-                                                <option value=" Shipment Service"/>
+                                                <option value="Services" disabled selected/>
+                                                <option value="Garage"/>
+                                                <option value="Puncture"/>
+                                                <option value="Shipment"/>
                                                 
                                                 </datalist>
                                                 </div>
